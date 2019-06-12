@@ -10,17 +10,22 @@ h1 {
 	color: red;
 }
 
-h2, h3 {
+h2 {
 	margin-top: 40px;
 	color: orangered;
+}
+
+h3 {
+  margin-top: 20px;
+  color: orangered;
 }
 
 .social-link {
 	margin-right: 10px;
 }
 
-.photo-id {
-	width: 400px;
+.photo {
+  width: 400px;
 }
 
 a:link {
