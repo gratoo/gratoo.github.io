@@ -6,10 +6,35 @@ body {
   font-size: smaller;
 }
 
+h1 {
+	color: red;
+}
+
 h2, h3 {
 	margin-top: 40px;
+	color: orangered;
 }
 
 .social-link {
 	margin-right: 10px;
+}
+
+.photo-id {
+	width: 20%;
+}
+
+a:link {
+  color: orange;
+}
+
+a:visited {
+  color: orange;
+}
+
+a:hover {
+  color: orange;
+}
+
+a:active {
+  color: orange;
 }
