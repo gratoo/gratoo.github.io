@@ -43,3 +43,7 @@ a:hover {
 a:active {
   color: orange;
 }
+
+p {
+  max-width: 800px;
+}
