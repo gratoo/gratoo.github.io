@@ -1,58 +1,146 @@
-<!DOCTYPE html>
-<html lang = "en-US">
-	<head>
-		<meta charset = "UTF-8">
-		<title>Stephane Bersot</title>
-		<link rel = "stylesheet" type = "text/css" href = "css/styles.css"><link/>
-	</head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="src/main.js"></script>
+    <title>Stephane's Website</title>
+    <script type="module" crossorigin src="/assets/index-y4JALSvG.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CHDYz3E5.css">
+  </head>
+  <body>
 
-	<body>
-		<h1>Stephane Bersot</h1>
-		<p>My new website is under construction. In the meantime here's some links to some of my projects :)</p>
-		<img class="" width="600" src="images/IMG_4991.jpg"></img>
-		<h2>My work</h2>
-		<p>Since 2015, I've been a <b>Graphics Prototyping Engineer at Apple</b>, working on the Camera Incubation team. I design and build interactive demos, simulations, visualization tools, and prototypes that help explore and validate next-generation camera hardware. Among other things :)</p>
-		<a class="" href="https://www.linkedin.com/in/stephane-bersot-85457829">Linkedin profile</a>
+    <canvas id="bg"></canvas>
+    
+    <main>
 
-		<h2>My student projects</h2>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/hPpPLoMuDEA" frameborder="0" allowfullscreen></iframe>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/9We4Gsto_7I" frameborder="0" allowfullscreen></iframe>
+      <header>
+        <h1>Stephane Bersot</h1>
+        <p>🚀 Welcome to my website!</p>
+      </header>
 
-		<h2>My music</h2>
-		<h3>Mochii Rider (2020 - Today)</h3>
-		<p>Solo electro-rock project.</p>
-		<a class="social-link" href="https://soundcloud.com/mochiirider">SoundCloud</a>
-		<a class="social-link" href="https://mochiirider.bandcamp.com">Bandcamp</a>
-		<a class="social-link" href="https://www.youtube.com/channel/UCtaKKYGekiea4NfTcG7iKdA">Youtube</a>
-		<a class="social-link" href="https://www.instagram.com/mochiirider">Instagram</a>
-		<a class="social-link" href="https://www.facebook.com/mochiirider">Facebook</a>
-		<a class="social-link" href="https://twitter.com/MochiiRider">Twitter</a><br>
-		<br>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/EpXCM9r6wnc" frameborder="0" allowfullscreen></iframe>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/rR0765_myCs" frameborder="0" allowfullscreen></iframe>
-		
-		<h3>Mochii Project (2017 - Today)</h3>
-		<a class="social-link" href="https://www.mochiiproject.com">Website</a>
-		<a class="social-link" href="https://www.youtube.com/channel/UCVuwzAoeGi-ZCt07GoL107A">Youtube</a>
-		<a class="social-link" href="https://www.instagram.com/mochiiproject">Instagram</a>
-		<a class="social-link" href="https://www.facebook.com/mochiiproject">Facebook</a><br>
-		<br>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/GmpTQX7nyvk" frameborder="0" allowfullscreen></iframe>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/TNEXaF519FY" frameborder="0" allowfullscreen></iframe>
+      <blockquote>
+        <p>Engineer by day, Artist by night</p>
+      </blockquote>
+      
+      <section id="Intro">
+        <img src="/assets/WordCloud-DAkkIyTZ.jpg" alt="Word Cloud" id="thumbnail">
+      </section>
+      
+      <!-- Overlay -->
+      <div id="overlay" onclick="hideOverlay()">
+        <img src="/assets/WordCloud-DAkkIyTZ.jpg" alt="Full Word Cloud">
+      </div>
+      <script>
+        const thumbnail = document.getElementById('thumbnail');
+        const overlay = document.getElementById('overlay');
+      
+        thumbnail.onclick = () => {
+          overlay.style.display = 'flex';
+        };
+      
+        function hideOverlay() {
+          overlay.style.display = 'none';
+        }
+      </script>
+      
 
-		<h3>Ayakashi (2014 - 2017)</h3>
-		<a class="social-link" href="https://ayakashimusic.github.io/">Website</a>
-		<a class="social-link" href="https://www.youtube.com/user/ayakashisf">Youtube</a>
-		<a class="social-link" href="https://www.facebook.com/ayakashi.sf/photos">Facebook</a><br>
-		<br>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/WG1LEjdn7XQ" frameborder="0" allowfullscreen></iframe>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/g6dX2dDLDVM" frameborder="0" allowfullscreen></iframe>
+      <section id="MyWork">
+        <div class="text">
+          <h2>🍎 My Work</h2>
+          <h3>3D Graphics Prototyping Engineer - Apple</h3>
+          <p>(2015 to present)</p>
+          <p>As part of the Camera Incubation team, I design and develop interactive demos, simulations, visualization tools, 
+            and exploratory prototypes to evaluate next-generation camera hardware across a wide range of devices. 
+            Much of my work is confidential, but it lives at the intersection of 3D graphics, hardware validation, and immersive user experiences. 
+            While the prototypes are interactive and often visually engaging, they are grounded in rigorous scientific methodology. 
+            We validate our results against ground truth data to ensure accuracy. 
+            I use whatever language or software best fits the problem, often Unity, Blender, Python, or custom tools, 
+            and thrive as a generalist who bridges disciplines.</p>
+          <a href="https://www.linkedin.com/in/stephane-bersot-85457829">Linkedin profile</a>
+        </div>
+        <div class="image">
+          <img src="/assets/IMG_1015-CyoQGrti.jpg" alt="Portrait of Stéphane">
+        </div>
+      </section>
+      
+      <section>
+        <h2>👨‍🎓 My Student Projects</h2>
+        <p>(2009 - 2010)</p>
+        <div class="video-row">
+          <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/hPpPLoMuDEA" frameborder="0" allowfullscreen></iframe></div>
+          <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/9We4Gsto_7I" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+      </section>
 
-		<h2>My photos</h2>
-		<a href="https://www.instagram.com/gratoo28">Some pictures I took. More on Instagram!</a><br>
-		<br>
-		<img class="photo" src="images/IMG_3681.jpg"></img>
-		<img class="photo" src="images/IMG_4097.jpg"></img>
-		<img class="photo" src="images/IMG_3984.jpg"></img>
-	</body>
+      <blockquote>
+        <p>I love music, cats and Japan ٩(◕‿◕｡)۶</p>
+      </blockquote>
+
+      <section id="MyMusic">
+        <h2>🎸 My Music</h2>
+        <p>I compose/record music and shoot/edit videos!</p>
+        <h3>Mochii Rider</h3>
+        <p>(2020 - Today)</p>
+        <a class="social-link" href="https://soundcloud.com/mochiirider">SoundCloud</a>
+        <a class="social-link" href="https://mochiirider.bandcamp.com">Bandcamp</a>
+        <a class="social-link" href="https://www.youtube.com/channel/UCtaKKYGekiea4NfTcG7iKdA">Youtube</a>
+        <a class="social-link" href="https://www.instagram.com/mochiirider">Instagram</a>
+        <a class="social-link" href="https://www.facebook.com/mochiirider">Facebook</a>
+        <a class="social-link" href="https://twitter.com/MochiiRider">Twitter</a><br>
+        <br>
+        <div class="video-row">
+          <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/EpXCM9r6wnc" frameborder="0" allowfullscreen></iframe></div>
+          <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/rR0765_myCs" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+
+        <h3>Mochii Project</h3>
+        <p>(2017 - 2020)</p>
+        <a class="social-link" href="https://www.mochiiproject.com">Website</a>
+        <a class="social-link" href="https://www.youtube.com/channel/UCVuwzAoeGi-ZCt07GoL107A">Youtube</a>
+        <a class="social-link" href="https://www.instagram.com/mochiiproject">Instagram</a>
+        <a class="social-link" href="https://www.facebook.com/mochiiproject">Facebook</a><br>
+        <br>
+        <div class="video-row">
+          <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/GmpTQX7nyvk" frameborder="0" allowfullscreen></iframe></div>
+          <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/TNEXaF519FY" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+
+        <h3>Ayakashi</h3>
+        <p>(2014 - 2017)</p>
+        <a class="social-link" href="https://ayakashimusic.github.io/">Website</a>
+        <a class="social-link" href="https://www.youtube.com/user/ayakashisf">Youtube</a>
+        <a class="social-link" href="https://www.facebook.com/ayakashi.sf/photos">Facebook</a><br>
+        <br>
+        <div class="video-row">
+          <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/WG1LEjdn7XQ" frameborder="0" allowfullscreen></iframe></div>
+          <div class="video-wrapper"><iframe src="https://www.youtube.com/embed/g6dX2dDLDVM" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+      </section>
+      
+      <section id="MyPics">
+        <h2>📷 My Photos</h2>
+        Some pictures I took. More on <a href="https://www.instagram.com/gratoo28">Instagram!</a><br><br>
+        <div class="photo-row">
+          <img class="photo" src="/assets/IMG_3681-BD9Rdjsk.jpg">
+          <img class="photo" src="/assets/IMG_4097-a1ViA7_z.jpg">
+          <img class="photo" src="/assets/IMG_3984-Da8hp52a.jpg">
+        </div>
+      </section>      
+
+      <section id="MyCore">
+        <h2>💜 My Core</h2>
+        <p>I've been vegan for the animals since 2020 🌱</p>
+        <p>I practiced Kung Fu in the past and now train in Muay Thai 🥊</p>
+        <div class="photo-row">
+          <img class="core-image" src="/assets/Gloves-DkF0HiO-.png"></img>
+          <img class="core-image" src="/assets/Vegan2-9MXuf4Ch.png"></img>
+        </div>
+      </section>
+
+    </main>
+  </body>
 </html>
